@@ -9,7 +9,7 @@ function mainQues() {
 
     if (play.toUpperCase() == 'Y') {
         alert("I've 6 question, You need to Answering True at least 4 Question to be pass.")
-        let instroctoreName = prompt("The Instroctore Name is Bashar?");
+        let instroctoreName = prompt("do i like programming?");
         if (instroctoreName.toUpperCase() == 'Y') {
             hot += 1;
         }
@@ -17,40 +17,35 @@ function mainQues() {
             cold += 1;
         }
 
-        let howManyTA = prompt("Are you have 20 TA's to help us in the course?");
+        let howManyTA = prompt("do i like swimming");
         if (howManyTA.toUpperCase() == 'N') {
             hot += 1;
         }
         else if (howManyTA.toLowerCase() == 'y') {
             cold += 1;
-        } let howManyStudent = prompt("we are 35 student ?");
+        } let howManyStudent = prompt("Do you think I am good at drawing?");
         if (howManyStudent.toUpperCase() == 'N') {
             hot += 1;
         }
         else if (howManyStudent.toLowerCase() == 'y') {
             cold += 1;
         }
-        let LTUCDept = prompt("are LTUC have a build in Irbid ?");
+        let LTUCDept = prompt("Am I good at singing");
         if (LTUCDept.toUpperCase == 'Y') {
             hot += 1;
         }
         else if (LTUCDept.toLowerCase() == 'n') {
             cold += 1;
         }
-        let TA_Name = prompt("TA name is Ali ?");
+        let TA_Name = prompt("Do I speak English well");
         if (TA_Name.toLowerCase() == 'n') {
             hot += 1;
         }
         else if (TA_Name.toLowerCase() == 'y') {
             cold += 1;
         }
-        let rateofcourse = prompt("Are you have a full information in this course");
-        if (rateofcourse.toUpperCase() == 'Y') {
-            hot += 1;
-        }
-        else if (rateofcourse.toLowerCase() == 'n') {
-            cold += 1;
-        }
+   
+
         if (hot >= 4) {
             alert("You are passing in the exam and git " + hot + " of 6");
         }
