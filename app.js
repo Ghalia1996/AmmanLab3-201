@@ -6,40 +6,40 @@ let hot = 1 , cold = 0;
 
 if (play.toUpperCase() == 'Y'){
     alert("I've 6 question, You need to Answering True at least 4 Question to be pass.")
-    let instroctoreName = prompt("The Instroctore Name is Bashar?");
-    if (instroctoreName.toUpperCase() == 'Y'){
+    let myName = prompt("The User Name is Ghalia ?");
+    if (myName.toUpperCase() == 'Y'){
         hot+=1;
     }
-    else if(instroctoreName.toLowerCase() == 'n'){
+    else if(myName.toLowerCase() == 'n'){
         cold+=1;
     }
-    let howManyTA = prompt("Are you have 20 TA's to help us in the course?");
-    if (howManyTA.toUpperCase() == 'N'){
+    let bd = prompt("my birthdate is 22/02/1998 ?");
+    if (bd.toUpperCase() == 'N'){
         hot+=1;
     }
-    else if(howManyTA.toLowerCase() == 'y'){
+    else if(bd.toLowerCase() == 'y'){
         cold+=1;
     }
-    let howManyStudent = prompt("we are 35 student ?");
-    if (howManyStudent.toUpperCase() == 'N'){
+    let howManybrother = prompt("I've 3 brother's ?");
+    if (howManybrother.toUpperCase() == 'N'){
         hot+=1;
     }
-    else if(howManyStudent.toLowerCase() == 'y'){
+    else if(howManybrother.toLowerCase() == 'y'){
         cold+=1;
     }
-    let LTUCDept = prompt("are LTUC have a build in Irbid ?");
-    if (LTUCDept.toUpperCase == 'Y'){
+    let YUDept = prompt("Am I studying in Yarmouk university ?");
+    if (YUDept.toUpperCase == 'Y'){
         hot+=1;
     }
-    else if(LTUCDept.toLowerCase()=='n'){
+    else if(YUDept.toLowerCase()=='n'){
         cold+=1;
     }
-    let TA_Name = prompt("TA name is Ali ?");
-    if (TA_Name.toLowerCase() == 'n')
+    let Hob = prompt("Do I like Reading and Swimming both ?");
+    if (Hob.toLowerCase() == 'n')
     {
         hot+=1;
     }
-    else if (TA_Name.toLowerCase() == 'y'){
+    else if (Hob.toLowerCase() == 'y'){
         cold+=1;
     }
     let rateofcourse = prompt("Are you have a full information in this course");
@@ -65,9 +65,9 @@ else{
 
 
 let entered = prompt("How many TA we have in the lesson?");
-for(var i = 0 ; i < 4 ; i++){
+for(var i = 0 ; i < 6 ; i++){
 
-    if (entered == '7' && i != 3){
+    if (entered == '7' && i != 5){
         let ii = i + 1; 
         alert("Yes, They are :"+
         "\nSa'ed Al khateeb"        
@@ -79,11 +79,11 @@ for(var i = 0 ; i < 4 ; i++){
         +"\nYou have : " + ii + " Steps" );
         break;
     }
-    else if(entered > 7 && i != 3){
+    else if(entered > 7 && i != 5){
         entered = prompt("you input up number, Please try again.");
         continue;
     }
-    else if (entered < 7 && i != 3){
+    else if (entered < 7 && i != 5){
         entered = prompt("you input to low number, Please try again.");
         continue;
     }
